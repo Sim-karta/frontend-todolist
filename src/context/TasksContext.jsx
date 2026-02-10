@@ -16,12 +16,13 @@ export const TasksProvider = (props) => {
         deleteAllTasks,
         toggleTaskComplete,
         addTask,
-        
         newTaskTitle,
         setNewTaskTitle,
         searchQuery,
         setSearchQuery,
-        newTaskInputRef
+        newTaskInputRef,
+        disappearingTaskId,
+        appearingTaskId
     } = useTasks();
 
     const {
@@ -40,12 +41,13 @@ export const TasksProvider = (props) => {
                 deleteAllTasks,
                 toggleTaskComplete,
                 addTask,
-                
                 newTaskTitle,
                 setNewTaskTitle,
                 searchQuery,
                 setSearchQuery,
-                newTaskInputRef
+                newTaskInputRef,
+                disappearingTaskId,
+                appearingTaskId
             }}
         >
             {children}

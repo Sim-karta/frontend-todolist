@@ -8,7 +8,7 @@ const matchPath = (path, route) => {
         return null;
     }
 
-    const params = {}
+    const params = {};
 
     for (let i = 0; i < routePaths.length; i++) {
         if(routePaths[i].startsWith(':')) {
