@@ -11,13 +11,10 @@ export const TasksProvider = (props) => {
 
     const {
         tasks,
-        filteredTasks,
         deleteTask,
         deleteAllTasks,
         toggleTaskComplete,
         addTask,
-        newTaskTitle,
-        setNewTaskTitle,
         searchQuery,
         setSearchQuery,
         newTaskInputRef,
@@ -32,13 +29,10 @@ export const TasksProvider = (props) => {
 
     const value = useMemo(() => ({
         tasks,
-        filteredTasks,
         deleteTask,
         deleteAllTasks,
         toggleTaskComplete,
         addTask,
-        newTaskTitle,
-        setNewTaskTitle,
         searchQuery,
         setSearchQuery,
         newTaskInputRef,
@@ -48,13 +42,10 @@ export const TasksProvider = (props) => {
         firstIncompleteTaskId
     }), [
         tasks,
-        filteredTasks,
         deleteTask,
         deleteAllTasks,
         toggleTaskComplete,
         addTask,
-        newTaskTitle,
-        setNewTaskTitle,
         searchQuery,
         setSearchQuery,
         newTaskInputRef,
